@@ -8,7 +8,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: aqua; /* если хочешь */
+    background-color: rgb(34, 37, 37);
 }
 .card {
     background-color: white;
@@ -42,4 +42,18 @@ button:hover {
 .description {
     width: max-content;
     margin: 10px auto;
+
+}
+
+@media (max-width: 768px) {
+  body {
+    flex-direction: column;
+    padding: 20px;
+  }
+  
+  .card {
+    width: 100%;
+    max-width: 400px;
+    margin: 10px auto;
+  }
 }
