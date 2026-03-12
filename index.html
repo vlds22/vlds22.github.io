@@ -1,38 +1,22 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Карточка профиля</title>
+    <title>Трекер времени</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="card">
-         <img src="1.jpg" alt="фото Влада">
-         <h2 class="description">Влад Зубенко</h2>
-         <p class="description">Фронтенд-разработчик</p>
-         <button>Написать</button>
+    <div class="timer">
+        <h1>Трекер времени</h1>
+        <div class="stopwatch"><span id="timerDisplay">00:00:00</span></div>
+            <div class="buttons">
+                <button id="btn-start">СТАРТ</button>
+                <button id="btn-stop">СТОП</button>
+                <button id="btn-reset">ОБНУЛИТЬ</button>
+                <button id="btn-save">СОХРАНИТЬ</button>
+            </div>
     </div>
-    <div class="card">
-         <img src="2.jpg" alt="фото Ивана Иванова">
-         <h2 class="description">Иван Иванов</h2>
-         <p class="description">Бэкенд-разработчик</p>
-         <button>Написать</button>
-    </div>
-    <div class="card">
-         <img src="3.jpg" alt="фото Сабины">
-         <h2 class="description">Сабина Зубенко</h2>
-         <p class="description">Фулстэк-разработчик</p>
-         <button>Написать</button>
-    </div>
-    <div class="card">
-         <img src="4.jpg" alt="фото Дмитрия">
-         <h2 class="description">Дмитрий Зубенко</h2>
-         <p class="description">Миллиардер</p>
-         <button>Написать</button>
-    </div>
+    <script src="script.js"></script>
 </body>
-
 </html>
-
-

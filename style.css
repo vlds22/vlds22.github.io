@@ -8,23 +8,35 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: rgb(34, 37, 37);
+    background-color: rgb(59, 64, 64);
 }
-.card {
-    background-color: white;
+h1 {
     text-align: center;
+    padding-bottom: 10px;
+}
+.timer {
+    background-color: rgb(255, 255, 255);
     border-radius: 20px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     padding: 10px;
     width: 300px;
     margin: 10px;
 }
-img {
-    border-radius: 50%;
-    width: 120px;
-    height: 120px;
-    margin-bottom: 15px;
-    object-fit: cover;
+.buttons {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    margin-top: 10px;
+}
+#btn-reset, #btn-save {
+    grid-column: span 2;
+}
+.stopwatch {
+    border: 2px solid black;
+    min-width: 200px;
+    min-height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 button {
     background-color: #007bff;
@@ -33,27 +45,9 @@ button {
     padding: 10px 20px;
     border-radius: 10px;
     cursor: pointer;
-    margin-top: 10px;
+    min-width: max-content;
 }
 button:hover {
     background-color: #0056b3; 
     transform: scale(1.05);     
-}
-.description {
-    width: max-content;
-    margin: 10px auto;
-
-}
-
-@media (max-width: 768px) {
-  body {
-    flex-direction: column;
-    padding: 20px;
-  }
-  
-  .card {
-    width: 100%;
-    max-width: 400px;
-    margin: 10px auto;
-  }
 }
