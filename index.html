@@ -7,15 +7,23 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="timer">
-        <h1>Трекер времени</h1>
-        <div class="stopwatch"><span id="timerDisplay">00:00:00</span></div>
-            <div class="buttons">
+    <div class="app">
+        <div class="timer">
+            <h2>Трекер времени</h2>
+            <div class="stopwatch"><span id="timerDisplay">00:00:00</span></div>
+                <div class="buttons">
                 <button id="btn-start">СТАРТ</button>
                 <button id="btn-stop">СТОП</button>
                 <button id="btn-reset">ОБНУЛИТЬ</button>
                 <button id="btn-save">СОХРАНИТЬ</button>
-            </div>
+                </div>
+        </div>
+        <div class="history">
+                <h2>История записей</h2>
+                <ul class="session-list" id="session-list">
+                <li>Пока нет записей</li>
+                </ul>
+        </div>
     </div>
     <script src="script.js"></script>
 </body>
